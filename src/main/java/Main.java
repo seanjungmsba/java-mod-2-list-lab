@@ -1,5 +1,9 @@
 public class Main {
     public static void main(String[] args) {
-       Runner.holdBooks();
+        try {
+            Runner.addBooks();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 }
